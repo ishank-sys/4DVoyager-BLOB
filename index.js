@@ -4,14 +4,10 @@ import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 
 // Base URL for static assets stored in Vercel Blob storage.
-// Make sure all required GLB/JSON/etc. files are uploaded there.
-const BLOB_BASE_URL = process.env.NEXT_PUBLIC_BLOB_BASE_URL;
+// This is hard-coded to avoid any runtime env issues.
+const BLOB_BASE_URL = 'https://phv9f2n767db5svp.public.blob.vercel-storage.com';
 
 function buildBlobUrl(path) {
-  if (!BLOB_BASE_URL) {
-    // This will surface a clear runtime error in development if the env var is missing.
-    throw new Error('NEXT_PUBLIC_BLOB_BASE_URL environment variable is not defined');
-  }
   const normalizedBase = BLOB_BASE_URL.replace(/\/+$/, '');
   const normalizedPath = String(path || '').replace(/^\/+/, '');
   return `${normalizedBase}/${normalizedPath}`;
