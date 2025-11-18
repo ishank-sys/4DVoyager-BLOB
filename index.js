@@ -645,7 +645,34 @@ function buildTimelineFromEvents() {
   if (!scaleEl || !datesEl) return;
   scaleEl.innerHTML = '';
   datesEl.innerHTML = '';
+  
+  // Use hardcoded dates based on project instead of schedule dates
+  const timelineConfigs = {
+    'BSGS': [
+      "Jan 2026", "Feb 2026", "Mar 2026", "Apr 2026", "May 2026", "Jun 2026",
+      "Jul 2026", "Aug 2026", "Sep 2026", "Oct 2026", "Nov 2026", "Dec 2026",
+      "Jan 2027", "Feb 2027", "Mar 2027", "Apr 2027"
+    ],
+    'CUP': [
+      "Aug 2026", "Sep 2026", "Oct 2026", "Nov 2026", "Dec 2026",
+      "Jan 2027", "Feb 2027", "Mar 2027"
+    ],
+    'LORRY': [
+      "Jan 2027", "Feb 2027", "Mar 2027", "Apr 2027", "May 2027", "Jun 2027"
+    ],
+    'WRC': [
+      "Sep 2025", "Oct 2025", "Nov 2025", "Dec 2025",
+      "Jan 2026", "Feb 2026", "Mar 2026", "Apr 2026", "May 2026", "Jun 2026", "Jul 2026"
+    ],
+    '1': [
+      "Aug 2026", "Sep 2026", "Oct 2026", "Nov 2026", "Dec 2026",
+      "Jan 2027", "Feb 2027", "Mar 2027", "Apr 2027"
+    ]
+  };
+  
+  const dates = timelineConfigs[currentProject] || timelineConfigs['BSGS'];
   const ordered = [...timelineEvents].sort((a,b)=>a.index-b.index);
+  
   const handleClick = (ev) => {
     // Prefer exact file mapping, else just update highlight to this event
     const key = ev.file ? normalizeFileKey(ev.file) : null;
@@ -659,22 +686,28 @@ function buildTimelineFromEvents() {
       updateTimelineHighlight(ev.index);
     }
   };
-  ordered.forEach(ev => {
+  
+  // Generate ticks and dates based on hardcoded date arrays - ensure they match
+  dates.forEach((date, i) => {
+    // Create tick
     const tick = document.createElement('div');
     tick.className = 'tick';
-    tick.dataset.index = String(ev.index);
-    tick.style.cursor = 'pointer';
-    tick.addEventListener('click', () => handleClick(ev));
+    // Map to timeline event if it exists, otherwise use index
+    const ev = ordered[i];
+    if (ev) {
+      tick.dataset.index = String(ev.index);
+      tick.style.cursor = 'pointer';
+      tick.addEventListener('click', () => handleClick(ev));
+    }
     scaleEl.appendChild(tick);
+    
+    // Create date label
     const span = document.createElement('span');
-    try {
-      const d = new Date(ev.date);
-      if (!isNaN(d)) {
-        span.textContent = String(d.getMonth()+1).padStart(2,'0')+ '/' + String(d.getDate()).padStart(2,'0');
-      } else span.textContent = ev.date;
-    } catch { span.textContent = ev.date; }
+    span.textContent = date;
     span.style.cursor = 'pointer';
-    span.addEventListener('click', () => handleClick(ev));
+    if (ev) {
+      span.addEventListener('click', () => handleClick(ev));
+    }
     datesEl.appendChild(span);
   });
 }
