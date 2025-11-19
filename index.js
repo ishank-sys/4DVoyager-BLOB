@@ -762,7 +762,7 @@ function updateTimelinePopup(currentIndex) {
     if (!ev) return '';
     const title = ev.type === 'fab' ? 'Fabrication Complete' : 'Erection Complete';
     const note = ev.note ? ` – ${ev.note}` : '';
-    return `<div class="milestone ${cls}">${title}: Member ${ev.member}${note}</div>`;
+    return `<div class="milestone ${cls}">${title}: ${ev.member}${note}</div>`;
   };
 
   timelinePopupEl.innerHTML =
