@@ -461,7 +461,7 @@ async function loadAllModels() {
 
       // Apply LORRY-specific camera and control constraints (zoom-only, top-side)
       // Commented out to allow free camera movement for LORRY project
-      /*
+      
       if (currentProject === 'LORRY') {
         const urlParams = new URLSearchParams(window.location.search);
         const cfg = getLorryCameraConfig(urlParams);
@@ -496,7 +496,7 @@ async function loadAllModels() {
         // Ensure rotate button is enabled for non-LORRY projects
         if (rotateButton) rotateButton.disabled = false;
       }
-      */
+      
       // Ensure rotate button is enabled for all projects
       if (rotateButton) rotateButton.disabled = false;
 

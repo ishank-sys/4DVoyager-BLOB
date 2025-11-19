@@ -4,13 +4,13 @@
     "fabricationCompletion": {
       "files": ["BSGSifc-1.glb", "BSGSifc-2.glb", "BSGSifc-3.glb"],
       "file": "BSGSifc-2.glb",
-      "date": "01-01-2026",
+      "date": "30-10-2026",
       "note": ""
     },
     "erectionCompletion": {
       "files": ["BSGSifc-1.glb", "BSGSifc-2.glb", "BSGSifc-3.glb"],
       "file": "BSGSifc-35.glb",
-      "date": "01-03-2026",
+      "date": "11-11-2026",
       "note": ""
     }
   },
@@ -19,13 +19,13 @@
     "fabricationCompletion": {
       "files": ["BSGSifc-1.glb", "BSGSifc-2.glb", "BSGSifc-3.glb"],
       "file": "BSGSifc-16.glb",
-      "date": "01-18-2026",
+      "date": "10-21-2026",
       "note": ""
     },
     "erectionCompletion": {
       "files": ["BSGSifc-1.glb", "BSGSifc-2.glb", "BSGSifc-3.glb"],
       "file": "BSGSifc-83.glb",
-      "date": "01-20-2026",
+      "date": "02-04-2027",
       "note": ""
     }
   },
@@ -34,13 +34,13 @@
     "fabricationCompletion": {
       "files": ["BSGSifc-1.glb", "BSGSifc-2.glb", "BSGSifc-3.glb"],
       "file": "BSGSifc-31.glb",
-      "date": "01-22-2026",
+      "date": "11-07-2026",
       "note": ""
     },
     "erectionCompletion": {
       "files": ["BSGSifc-1.glb", "BSGSifc-2.glb", "BSGSifc-3.glb"],
       "file": "BSGSifc-91.glb",
-      "date": "01-24-2026",
+      "date": "02-13-2027",
       "note": ""
     }
   },
@@ -49,13 +49,13 @@
     "fabricationCompletion": {
       "files": ["BSGSifc-1.glb", "BSGSifc-2.glb", "BSGSifc-3.glb"],
       "file": "BSGSifc-48.glb",
-      "date": "01-26-2026",
+      "date": "11-24-2026",
       "note": ""
     },
     "erectionCompletion": {
       "files": ["BSGSifc-1.glb", "BSGSifc-2.glb", "BSGSifc-3.glb"],
       "file": "BSGSifc-100.glb",
-      "date": "01-28-2026",
+      "date": "02-22-2027",
       "note": ""
     }
   },
@@ -64,13 +64,13 @@
     "fabricationCompletion": {
       "files": ["BSGSifc-1.glb", "BSGSifc-2.glb", "BSGSifc-3.glb"],
       "file": "BSGSifc-77.glb",
-      "date": "01-30-2026",
+      "date": "12-24-2026",
       "note": ""
     },
     "erectionCompletion": {
       "files": ["BSGSifc-1.glb", "BSGSifc-2.glb", "BSGSifc-3.glb"],
       "file": "BSGSifc-114.glb",
-      "date": "02-01-2026",
+      "date": "02-01-2027",
       "note": ""
     }
   }
