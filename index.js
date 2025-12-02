@@ -11,8 +11,8 @@ const BLOB_BASE_URL = 'https://phv9f2n767db5svp.public.blob.vercel-storage.com';
 const PROJECT_CONFIG = {
   BSGS: { folder: 'BSGS', displayName: 'BSGS' },
   LORRY: { folder: 'LORRY', displayName: 'LORRY' },
-  WRC: { folder: 'CUP', displayName: 'CUP' },
-  CUP: { folder: 'WRC', displayName: 'WRC' },
+  WRC: { folder: 'WRC', displayName: 'WRC' },
+  CUP: { folder: 'CUP', displayName: 'CUP' },
   '1': { folder: '1', displayName: 'Waste Management' }
 };
 
@@ -112,6 +112,9 @@ let timelineCells = [];
 // Array of timeline events built from schedule (fab/erec)
 let timelineEvents = [];
 let timelinePopupEl = document.getElementById('timeline-popup');
+let timelineDatePopupEl = null;
+let bottomBarEl = null;
+let modelManifest = [];
 // Maps for filename-based navigation and highlight sync
 let filenameToModelIndex = new Map();
 let filenameToTimelineIndex = new Map();
@@ -199,6 +202,7 @@ function showModelAt(rawIndex, fromAutoplay = false) {
   if (!loadedModels.length) return;
   const i = Math.max(0, Math.min(parseInt(rawIndex, 10) || 0, loadedModels.length - 1));
   if (!fromAutoplay) stopAutoplay();
+  currentModelIndex = i;
   if (slider) slider.value = String(i);
   updateModelVisibility(i);
   
@@ -221,6 +225,7 @@ function showModelAt(rawIndex, fromAutoplay = false) {
       updateTimelineHighlight(currentTimelineIndex);
     }
   }
+  updateSliderDatePopup(i);
 }
 
 // Preload adjacent models for smoother navigation
@@ -277,6 +282,7 @@ window.addEventListener('resize', () => {
   camera.aspect = window.innerWidth / window.innerHeight;
   camera.updateProjectionMatrix();
   renderer.setSize(window.innerWidth, window.innerHeight);
+  updateSliderDatePopup(currentModelIndex);
 });
 
 // === Load Models ===
@@ -287,6 +293,7 @@ async function loadAllModels() {
     const projectParam = (urlParams.get("project") || "BSGS").toUpperCase();
     const { folder: base, displayName } = getProjectConfig(projectParam);
     currentProject = base; // keep global state aligned to the actual folder we load from
+    modelManifest = [];
     
     // Load manifest from local repo/public served root (use repo file), prefer local but fall back to Blob if necessary
     const manifestUrl = `/${base}/models.json`;
@@ -325,10 +332,22 @@ async function loadAllModels() {
       } catch(e){}
       return; // stop further processing
     }
-    const names = await res.json();
-    if (!Array.isArray(names) || names.length === 0) throw new Error(`models.json in ${base} is empty.`);
+    const manifestRaw = await res.json();
+    const manifestEntries = Array.isArray(manifestRaw)
+      ? manifestRaw.map(entry => {
+          if (typeof entry === 'string') return { name: entry, date: null };
+          if (entry && typeof entry === 'object' && entry.name) {
+            return { name: entry.name, date: entry.date || null };
+          }
+          return null;
+        }).filter(Boolean)
+      : [];
+    if (!manifestEntries.length) throw new Error(`models.json in ${base} is empty or invalid.`);
+    modelManifest = manifestEntries;
+    const names = manifestEntries.map(e => e.name);
 
     loadedModels = [];
+    currentModelIndex = 0;
 
     // Load all models from local per-project manifest
     for (let i = 0; i < names.length; i++) {
@@ -388,6 +407,7 @@ async function loadAllModels() {
       if (rotateButton) rotateButton.disabled = false;
 
       autoplayButton.disabled = false;
+      updateSliderDatePopup(0);
       
       loadingText.textContent = `${displayName} models loaded successfully`;
 
@@ -416,6 +436,8 @@ if (container) {
   loadingOverlay = document.getElementById("loading-overlay");
   loadingText = document.getElementById("loading-text");
   progressTbody = document.getElementById("progress-tbody");
+  bottomBarEl = document.getElementById("bottom-bar");
+  timelineDatePopupEl = document.getElementById("timeline-date-popup");
 
   // Setup renderer, controls, lighting and theme
   setupRenderer();
@@ -665,8 +687,8 @@ function buildTimelineFromEvents() {
       "Jan 2027", "Feb 2027", "Mar 2027", "Apr 2027", "May 2027", "Jun 2027"
     ],
     'WRC': [
-      "Sep 2025", "Nov 2025",
-      "Mar 2026", "Apr 2026","Jun 2026", "Jul 2026"
+      "Aug 2026", "Sep 2026", "Oct 2026", "Nov 2026", "Dec 2026",
+      "Jan 2027", "Feb 2027", "Mar 2027", "Apr 2027"
     ],
     '1': [
       "Aug 2026", "Sep 2026", "Oct 2026", "Nov 2026", "Dec 2026",
@@ -757,3 +779,32 @@ function animate() {
   renderer.render(scene, camera);
 }
 animate();
+
+function getDateLabelForIndex(idx) {
+  if (!Number.isFinite(idx) || idx < 0) return '';
+  const entry = modelManifest[idx];
+  if (entry && entry.date) return entry.date;
+  if (entry && entry.name) return entry.name;
+  const model = loadedModels[idx];
+  return model?.userData?.originalName || '';
+}
+
+function updateSliderDatePopup(idx) {
+  if (!slider || !timelineDatePopupEl || !bottomBarEl) return;
+  const min = Number(slider.min || 0);
+  const max = Number(slider.max || 0);
+  const rawValue = Number(slider.value || idx || 0);
+  const value = Math.min(Math.max(rawValue, min), Number.isFinite(max) ? max : rawValue);
+  const ratio = max > min ? (value - min) / (max - min) : 0;
+  const sliderRect = slider.getBoundingClientRect();
+  const barRect = bottomBarEl.getBoundingClientRect();
+  const handleX = sliderRect.left + ratio * sliderRect.width;
+  const left = handleX - barRect.left;
+  const label = getDateLabelForIndex(idx);
+  timelineDatePopupEl.textContent = label || 'No date';
+  const popupHeight = timelineDatePopupEl.offsetHeight || 24;
+  const top = sliderRect.top - barRect.top - popupHeight - 8;
+  timelineDatePopupEl.style.left = `${left}px`;
+  timelineDatePopupEl.style.top = `${Math.max(top, 0)}px`;
+  timelineDatePopupEl.classList.add('visible');
+}

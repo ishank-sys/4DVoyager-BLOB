@@ -1,19 +1,5 @@
 [
-  {
-    "member": "Foundation Embeds",
-    "fabricationCompletion": {
-      "files": ["BSGSifc-1.glb", "BSGSifc-2.glb", "BSGSifc-3.glb"],
-      "file": "BSGS 03 3D-Model10-30.glb",
-      "date": "30-10-2026",
-      "note": ""
-    },
-    "erectionCompletion": {
-      "files": ["BSGSifc-1.glb", "BSGSifc-2.glb", "BSGSifc-3.glb"],
-      "file": "BSGS 03 3D-Model11-11.glb",
-      "date": "11-11-2026",
-      "note": ""
-    }
-  },
+  
   {
     "member": "Phase 03A",
     "fabricationCompletion": {
@@ -63,7 +49,7 @@
     "member": "Phase 03D",
     "fabricationCompletion": {
       "files": ["BSGSifc-1.glb", "BSGSifc-2.glb", "BSGSifc-3.glb"],
-      "file": "BSGS 03 3D-Model12-24.glb",
+      "file": "BSGS 03 3D-Model12-23.glb",
       "date": "12-24-2026",
       "note": ""
     },

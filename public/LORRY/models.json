@@ -1,111 +1,438 @@
 [
-  "301_LORRY_3D MODEL.glb",
-  "301_LORRY_3D MODEL01-18.glb",
-  "301_LORRY_3D MODEL01-19.glb",
-  "301_LORRY_3D MODEL01-20.glb",
-  "301_LORRY_3D MODEL01-21.glb",
-  "301_LORRY_3D MODEL01-22.glb",
-  "301_LORRY_3D MODEL01-24.glb",
-  "301_LORRY_3D MODEL01-25.glb",
-  "301_LORRY_3D MODEL01-26.glb",
-  "301_LORRY_3D MODEL01-27.glb",
-  "301_LORRY_3D MODEL01-28.glb",
-  "301_LORRY_3D MODEL01-29.glb",
-  "301_LORRY_3D MODEL01-31.glb",
-  "301_LORRY_3D MODEL02-01.glb",
-  "301_LORRY_3D MODEL02-02.glb",
-  "301_LORRY_3D MODEL02-03.glb",
-  "301_LORRY_3D MODEL02-04.glb",
-  "301_LORRY_3D MODEL02-05.glb",
-  "301_LORRY_3D MODEL02-06.glb",
-  "301_LORRY_3D MODEL02-07.glb",
-  "301_LORRY_3D MODEL02-08.glb",
-  "301_LORRY_3D MODEL02-09.glb",
-  "301_LORRY_3D MODEL02-10.glb",
-  "301_LORRY_3D MODEL02-11.glb",
-  "301_LORRY_3D MODEL02-12.glb",
-  "301_LORRY_3D MODEL02-13.glb",
-  "301_LORRY_3D MODEL02-14.glb",
-  "301_LORRY_3D MODEL02-16.glb",
-  "301_LORRY_3D MODEL02-17.glb",
-  "301_LORRY_3D MODEL02-18.glb",
-  "301_LORRY_3D MODEL02-19.glb",
-  "301_LORRY_3D MODEL02-21.glb",
-  "301_LORRY_3D MODEL02-23.glb",
-  "301_LORRY_3D MODEL02-24.glb",
-  "301_LORRY_3D MODEL02-25.glb",
-  "301_LORRY_3D MODEL02-26.glb",
-  "301_LORRY_3D MODEL02-27.glb",
-  "301_LORRY_3D MODEL03-01.glb",
-  "301_LORRY_3D MODEL03-03.glb",
-  "301_LORRY_3D MODEL03-05.glb",
-  "301_LORRY_3D MODEL03-06.glb",
-  "301_LORRY_3D MODEL03-07.glb",
-  "301_LORRY_3D MODEL03-08.glb",
-  "301_LORRY_3D MODEL03-11.glb",
-  "301_LORRY_3D MODEL03-15.glb",
-  "301_LORRY_3D MODEL03-16.glb",
-  "301_LORRY_3D MODEL03-17.glb",
-  "301_LORRY_3D MODEL03-18.glb",
-  "301_LORRY_3D MODEL03-19.glb",
-  "301_LORRY_3D MODEL03-20.glb",
-  "301_LORRY_3D MODEL03-21.glb",
-  "301_LORRY_3D MODEL03-22.glb",
-  "301_LORRY_3D MODEL03-23.glb",
-  "301_LORRY_3D MODEL03-25.glb",
-  "301_LORRY_3D MODEL03-26.glb",
-  "301_LORRY_3D MODEL03-27.glb",
-  "301_LORRY_3D MODEL03-28.glb",
-  "301_LORRY_3D MODEL03-31.glb",
-  "301_LORRY_3D MODEL04-02.glb",
-  "301_LORRY_3D MODEL04-04.glb",
-  "301_LORRY_3D MODEL04-05.glb",
-  "301_LORRY_3D MODEL04-06.glb",
-  "301_LORRY_3D MODEL04-07.glb",
-  "301_LORRY_3D MODEL04-09.glb",
-  "301_LORRY_3D MODEL04-12.glb",
-  "301_LORRY_3D MODEL04-13.glb",
-  "301_LORRY_3D MODEL04-14.glb",
-  "301_LORRY_3D MODEL04-17.glb",
-  "301_LORRY_3D MODEL04-19.glb",
-  "301_LORRY_3D MODEL04-21.glb",
-  "301_LORRY_3D MODEL04-22.glb",
-  "301_LORRY_3D MODEL04-24.glb",
-  "301_LORRY_3D MODEL04-26.glb",
-  "301_LORRY_3D MODEL04-27.glb",
-  "301_LORRY_3D MODEL04-28.glb",
-  "301_LORRY_3D MODEL04-29.glb",
-  "301_LORRY_3D MODEL04-30.glb",
-  "301_LORRY_3D MODEL05-01.glb",
-  "301_LORRY_3D MODEL05-05.glb",
-  "301_LORRY_3D MODEL05-08.glb",
-  "301_LORRY_3D MODEL05-11.glb",
-  "301_LORRY_3D MODEL05-13.glb",
-  "301_LORRY_3D MODEL05-14.glb",
-  "301_LORRY_3D MODEL05-16.glb",
-  "301_LORRY_3D MODEL05-18.glb",
-  "301_LORRY_3D MODEL05-20.glb",
-  "301_LORRY_3D MODEL05-22.glb",
-  "301_LORRY_3D MODEL05-23.glb",
-  "301_LORRY_3D MODEL05-24.glb",
-  "301_LORRY_3D MODEL05-25.glb",
-  "301_LORRY_3D MODEL05-26.glb",
-  "301_LORRY_3D MODEL05-28.glb",
-  "301_LORRY_3D MODEL05-29.glb",
-  "301_LORRY_3D MODEL05-30.glb",
-  "301_LORRY_3D MODEL05-31.glb",
-  "301_LORRY_3D MODEL06-02.glb",
-  "301_LORRY_3D MODEL06-04.glb",
-  "301_LORRY_3D MODEL06-06.glb",
-  "301_LORRY_3D MODEL06-07.glb",
-  "301_LORRY_3D MODEL06-08.glb",
-  "301_LORRY_3D MODEL06-10.glb",
-  "301_LORRY_3D MODEL06-11.glb",
-  "301_LORRY_3D MODEL06-12.glb",
-  "301_LORRY_3D MODEL06-13.glb",
-  "301_LORRY_3D MODEL06-14.glb",
-  "301_LORRY_3D MODEL06-15.glb",
-  "301_LORRY_3D MODEL06-16.glb",
-  "301_LORRY_3D MODEL06-17.glb",
-  "301_LORRY_3D MODEL06-18.glb"
+  {
+    "name": "301_LORRY_3D MODEL.glb",
+    "date": ""
+  },
+  {
+    "name": "301_LORRY_3D MODEL01-18.glb",
+    "date": "01/18/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL01-19.glb",
+    "date": "01/19/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL01-20.glb",
+    "date": "01/20/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL01-21.glb",
+    "date": "01/21/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL01-22.glb",
+    "date": "01/22/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL01-24.glb",
+    "date": "01/24/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL01-25.glb",
+    "date": "01/25/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL01-26.glb",
+    "date": "01/26/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL01-27.glb",
+    "date": "01/27/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL01-28.glb",
+    "date": "01/28/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL01-29.glb",
+    "date": "01/29/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL01-31.glb",
+    "date": "01/31/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL02-01.glb",
+    "date": "02/01/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL02-02.glb",
+    "date": "02/02/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL02-03.glb",
+    "date": "02/03/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL02-04.glb",
+    "date": "02/04/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL02-05.glb",
+    "date": "02/05/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL02-06.glb",
+    "date": "02/06/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL02-07.glb",
+    "date": "02/07/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL02-08.glb",
+    "date": "02/08/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL02-09.glb",
+    "date": "02/09/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL02-10.glb",
+    "date": "02/10/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL02-11.glb",
+    "date": "02/11/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL02-12.glb",
+    "date": "02/12/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL02-13.glb",
+    "date": "02/13/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL02-14.glb",
+    "date": "02/14/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL02-16.glb",
+    "date": "02/16/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL02-17.glb",
+    "date": "02/17/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL02-18.glb",
+    "date": "02/18/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL02-19.glb",
+    "date": "02/19/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL02-21.glb",
+    "date": "02/21/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL02-23.glb",
+    "date": "02/23/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL02-24.glb",
+    "date": "02/24/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL02-25.glb",
+    "date": "02/25/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL02-26.glb",
+    "date": "02/26/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL02-27.glb",
+    "date": "02/27/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL03-01.glb",
+    "date": "03/01/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL03-03.glb",
+    "date": "03/03/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL03-05.glb",
+    "date": "03/05/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL03-06.glb",
+    "date": "03/06/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL03-07.glb",
+    "date": "03/07/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL03-08.glb",
+    "date": "03/08/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL03-11.glb",
+    "date": "03/11/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL03-15.glb",
+    "date": "03/15/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL03-16.glb",
+    "date": "03/16/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL03-17.glb",
+    "date": "03/17/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL03-18.glb",
+    "date": "03/18/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL03-19.glb",
+    "date": "03/19/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL03-20.glb",
+    "date": "03/20/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL03-21.glb",
+    "date": "03/21/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL03-22.glb",
+    "date": "03/22/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL03-23.glb",
+    "date": "03/23/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL03-25.glb",
+    "date": "03/25/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL03-26.glb",
+    "date": "03/26/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL03-27.glb",
+    "date": "03/27/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL03-28.glb",
+    "date": "03/28/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL03-31.glb",
+    "date": "03/31/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL04-02.glb",
+    "date": "04/02/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL04-04.glb",
+    "date": "04/04/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL04-05.glb",
+    "date": "04/05/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL04-06.glb",
+    "date": "04/06/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL04-07.glb",
+    "date": "04/07/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL04-09.glb",
+    "date": "04/09/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL04-12.glb",
+    "date": "04/12/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL04-13.glb",
+    "date": "04/13/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL04-14.glb",
+    "date": "04/14/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL04-17.glb",
+    "date": "04/17/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL04-19.glb",
+    "date": "04/19/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL04-21.glb",
+    "date": "04/21/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL04-22.glb",
+    "date": "04/22/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL04-24.glb",
+    "date": "04/24/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL04-26.glb",
+    "date": "04/26/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL04-27.glb",
+    "date": "04/27/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL04-28.glb",
+    "date": "04/28/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL04-29.glb",
+    "date": "04/29/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL04-30.glb",
+    "date": "04/30/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL05-01.glb",
+    "date": "05/01/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL05-05.glb",
+    "date": "05/05/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL05-08.glb",
+    "date": "05/08/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL05-11.glb",
+    "date": "05/11/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL05-13.glb",
+    "date": "05/13/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL05-14.glb",
+    "date": "05/14/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL05-16.glb",
+    "date": "05/16/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL05-18.glb",
+    "date": "05/18/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL05-20.glb",
+    "date": "05/20/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL05-22.glb",
+    "date": "05/22/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL05-23.glb",
+    "date": "05/23/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL05-24.glb",
+    "date": "05/24/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL05-25.glb",
+    "date": "05/25/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL05-26.glb",
+    "date": "05/26/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL05-28.glb",
+    "date": "05/28/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL05-29.glb",
+    "date": "05/29/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL05-30.glb",
+    "date": "05/30/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL05-31.glb",
+    "date": "05/31/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL06-02.glb",
+    "date": "06/02/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL06-04.glb",
+    "date": "06/04/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL06-06.glb",
+    "date": "06/06/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL06-07.glb",
+    "date": "06/07/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL06-08.glb",
+    "date": "06/08/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL06-10.glb",
+    "date": "06/10/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL06-11.glb",
+    "date": "06/11/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL06-12.glb",
+    "date": "06/12/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL06-13.glb",
+    "date": "06/13/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL06-14.glb",
+    "date": "06/14/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL06-15.glb",
+    "date": "06/15/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL06-16.glb",
+    "date": "06/16/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL06-17.glb",
+    "date": "06/17/27"
+  },
+  {
+    "name": "301_LORRY_3D MODEL06-18.glb",
+    "date": "06/18/27"
+  }
 ]
